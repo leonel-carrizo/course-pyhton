@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content%}
+<h1>APP CINE</h1>
+
+    <p>Bienevenido a mi <em>APP CINE</em>, mi primer proyecto en Django sobre una lista de péliculas y directores de cine.</p>
+
+<h2>Lo que tenemos.</h2>
+
+<p>El Cine cuenta con los siguientes recursos:</p>
+<ul>
+    <li><strong>Movies:</strong> {{ num_movies }} </li>
+    <li><strong>Formatos:</strong> {{ num_instances }}</li>
+    <li><strong>En DVD:</strong> {{ plataformas }} </li>
+    <li><strong>Directores:</strong> {{ num_directors }} </li>
+</ul>
+
+{% endblock %}
